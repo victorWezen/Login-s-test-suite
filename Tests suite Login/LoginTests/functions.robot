@@ -10,8 +10,8 @@ Open the browser
 Close the Browser
     Close Browser
 Given that the user will access the website 
-    Go To                            url=${WEBSITE}
     Maximize Browser Window
+    Go To                            url=${WEBSITE}
     Wait Until Element Is Visible    locator=${LOGO_SITE}
 
     
