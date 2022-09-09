@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220909 19:45:35.930" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\joaow\OneDrive\Documentos\Testes robotframework\Tests suite Login\LoginTests\tests.robot">
+<test id="s1-t1" name="test 01" line="9">
+<kw name="Open the browser" library="functions" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220909 19:45:36.132" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20220909 19:45:39.311" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220909 19:45:39.311" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.102 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00595FD3+2187219]
+	Ordinal0 [0x0052E6D1+1763025]
+	Ordinal0 [0x00443E78+802424]
+	Ordinal0 [0x004651F9+938489]
+	Ordinal0 [0x00460DDC+921052]
+	Ordinal0 [0x0045E691+910993]
+	Ordinal0 [0x004917F0+1120240]
+	Ordinal0 [0x0049144A+1119306]
+	Ordinal0 [0x0048C9A6+1100198]
+	Ordinal0 [0x00466F80+946048]
+	Ordinal0 [0x00467E76+949878]
+	GetHandleVerifier [0x008390C2+2721218]
+	GetHandleVerifier [0x0082AAF0+2662384]
+	GetHandleVerifier [0x0062137A+526458]
+	GetHandleVerifier [0x00620416+522518]
+	Ordinal0 [0x00534EAB+1789611]
+	Ordinal0 [0x005397A8+1808296]
+	Ordinal0 [0x00539895+1808533]
+	Ordinal0 [0x005426C1+1844929]
+	BaseThreadInitThunk [0x75F46739+25]
+	RtlGetFullPathName_UEx [0x773490AF+1215]
+	RtlGetFullPathName_UEx [0x7734907D+1165]
+</msg>
+<status status="FAIL" starttime="20220909 19:45:36.132" endtime="20220909 19:45:39.311"/>
+</kw>
+<status status="FAIL" starttime="20220909 19:45:36.131" endtime="20220909 19:45:39.311"/>
+</kw>
+<kw name="Close the Browser" library="functions" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220909 19:45:39.316" endtime="20220909 19:45:39.316"/>
+</kw>
+<status status="PASS" starttime="20220909 19:45:39.311" endtime="20220909 19:45:39.316"/>
+</kw>
+<status status="FAIL" starttime="20220909 19:45:36.131" endtime="20220909 19:45:39.317">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 105.0.5195.102 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00595FD3+2187219]
+	Ordinal0 [0x0052E6D1+1763025]
+	Ordinal0 [0x00443E78+802424]
+	Ordinal0 [0x004651F9+938489]
+	Ordinal0 [0x00460DDC+921052]
+	Ordinal0 [0x0045E691+910993]
+	Ordinal0 [0x004917F0+1120240]
+	Ordinal0 [0x0049144A+1119306]
+	Ordinal0 [0x0048C9A6+1100198]
+	Ordinal0 [0x00466F80+946048]
+	Ordinal0 [0x00467E76+949878]
+	GetHandleVerifier [0x008390C2+2721218]
+	GetHandleVerifier [0x0082AAF0+2662384]
+	GetHandleVerifier [0x0062137A+526458]
+	GetHandleVerifier [0x00620416+522518]
+	Ordinal0 [0x00534EAB+1789611]
+	Ordinal0 [0x005397A8+1808296]
+	Ordinal0 [0x00539895+1808533]
+	Ordinal0 [0x005426C1+1844929]
+	BaseThreadInitThunk [0x75F46739+25]
+	RtlGetFullPathName_UEx [0x773490AF+1215]
+	RtlGetFullPathName_UEx [0x7734907D+1165]
+</status>
+</test>
+<status status="FAIL" starttime="20220909 19:45:35.930" endtime="20220909 19:45:39.320"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220909 19:45:36.121" level="ERROR">Error in file 'C:\Users\joaow\OneDrive\Documentos\Testes robotframework\Tests suite Login\LoginTests\tests.robot' on line 3: Setting 'Test Setup' is not allowed in resource file.</msg>
+<msg timestamp="20220909 19:45:36.121" level="ERROR">Error in file 'C:\Users\joaow\OneDrive\Documentos\Testes robotframework\Tests suite Login\LoginTests\tests.robot' on line 4: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg timestamp="20220909 19:45:36.130" level="ERROR">Error in file 'C:\Users\joaow\OneDrive\Documentos\Testes robotframework\Tests suite Login\LoginTests\functions.robot' on line 4: Error in file 'C:\Users\joaow\OneDrive\Documentos\Testes robotframework\Tests suite Login\LoginTests\tests.robot' on line 7: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
